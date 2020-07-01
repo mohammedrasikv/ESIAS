@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="editextheight">45dp</dimen>
+    <dimen name="cardviewheight">60dp</dimen>
+    <dimen name="textinputlayoutheight">60dp</dimen>
+    <dimen name="paddingedittext">15dp</dimen>
+
+</resources>

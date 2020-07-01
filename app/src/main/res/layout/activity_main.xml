@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/logintoplayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/headerimage"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha=".75"
+                android:background="@color/maincolor" />
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/logoid"
+            android:layout_width="380dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/finallogo"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+            android:text="E-SIAS"
+            android:textSize="30sp"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textStyle="bold"
+            android:shadowColor="#000"
+            android:textColor="#fff"
+            android:shadowDx="5"
+            android:layout_marginTop="165dp"
+
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@id/logintoplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/maincolor"
+        android:outlineAmbientShadowColor="@color/maincolor"
+        android:outlineSpotShadowColor="@color/maincolor"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/studentlogin"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textinputlayoutheight"
+                android:background="@color/maincolor"
+                android:layout_marginTop="20dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cardviewheight"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/maincolor"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/usernamelogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editextheight"
+                        android:background="@drawable/edittextborder"
+                        android:layout_marginTop="14dp"
+                        android:hint="Username"
+                        android:textColorHint="@color/editlogin"
+                        android:textSize="18sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="@dimen/paddingedittext"
+                        android:drawableLeft="@drawable/userperson"
+                        android:drawablePadding="5dp"
+                        />
+
+
+                </androidx.cardview.widget.CardView>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textinputlayoutheight"
+                android:background="@color/maincolor"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cardviewheight"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/maincolor"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editextheight"
+                        android:background="@drawable/edittextborder"
+                        android:layout_marginTop="14dp"
+                        android:hint="Password"
+                        android:textColorHint="@color/editlogin"
+                        android:textSize="18sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="@dimen/paddingedittext"
+                        android:drawableLeft="@drawable/lock"
+                        android:drawablePadding="5dp"
+                        android:inputType="textPassword"
+                        />
+
+
+                </androidx.cardview.widget.CardView>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/editlogin"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:text="Remember me"
+                android:buttonTint="@color/editlogin"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/submitlogin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:cardBackgroundColor="#006f02"
+                app:cardCornerRadius="25dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="SIGN IN"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+
+                        />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Sign in as Public >"
+                android:textColor="@color/editlogin"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:clickable="true"
+
+                />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
