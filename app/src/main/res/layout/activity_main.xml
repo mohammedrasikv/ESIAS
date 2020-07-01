@@ -26,7 +26,13 @@
                 android:layout_height="match_parent"
                 android:alpha=".75"
                 android:background="@color/maincolor" />
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/backgroundgradiant"
+                />
 
         </RelativeLayout>
         <ImageView
@@ -35,22 +41,9 @@
             android:layout_height="250dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/finallogo"
+            android:background="@drawable/logopnf"
             />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-           android:gravity="center_horizontal"
-            android:text="E-SIAS"
-            android:textSize="30sp"
-            android:shadowRadius="@android:integer/config_longAnimTime"
-            android:textStyle="bold"
-            android:shadowColor="#000"
-            android:textColor="#fff"
-            android:shadowDx="5"
-            android:layout_marginTop="165dp"
 
-            />
     </RelativeLayout>
 
 
@@ -108,6 +101,7 @@
                         android:paddingLeft="@dimen/paddingedittext"
                         android:drawableLeft="@drawable/userperson"
                         android:drawablePadding="5dp"
+                        android:paddingRight="10dp"
                         />
 
 
@@ -138,6 +132,7 @@
                         android:drawableLeft="@drawable/lock"
                         android:drawablePadding="5dp"
                         android:inputType="textPassword"
+                        android:paddingRight="10dp"
                         />
 
 
