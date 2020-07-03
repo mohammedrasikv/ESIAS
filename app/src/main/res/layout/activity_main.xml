@@ -13,8 +13,8 @@
     <RelativeLayout
         android:id="@+id/logintoplayout"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_weight="40"
+        android:layout_height="0dp"
+        android:layout_weight="30"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -58,13 +58,13 @@
     <LinearLayout
         android:layout_below="@id/logintoplayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_alignParentBottom="true"
         android:background="@color/maincolor"
         android:outlineAmbientShadowColor="@color/maincolor"
         android:outlineSpotShadowColor="@color/maincolor"
         android:layout_marginTop="-10dp"
-        android:layout_weight="60"
+        android:layout_weight="70"
         android:weightSum="10"
         android:orientation="vertical"
 
