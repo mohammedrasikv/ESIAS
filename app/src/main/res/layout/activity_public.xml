@@ -8,25 +8,189 @@
     android:orientation="vertical"
     android:weightSum="100"
     >
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="35"
         >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradientimage"
+
+            />
 
 
 
-
-    </LinearLayout>
-    <LinearLayout
+    </RelativeLayout>
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/maincolor"
-        android:layout_weight="100">
+        android:layout_weight="65">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+
+                >
+               <RelativeLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="150dp"
+                   android:background="@drawable/buttonpublicwindow"
+                   android:layout_gravity="start"
+                   android:layout_marginRight="15dp"
+                   >
+                   <ImageView
+                       android:id="@+id/bookpng"
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:src="@drawable/books"
+                       android:layout_centerHorizontal="true"
+                       android:layout_marginTop="35dp"
+
+                       />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/bookpng"
+                       android:text="Syllabus"
+                       android:gravity="center"
+                       android:layout_marginTop="5dp"
+                       android:textStyle="bold"
+                       android:textColor="#00832F"
+                       android:textSize="17sp"/>
+
+
+               </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/buttonpublicwindow"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+
+                    >
+                    <ImageView
+                        android:id="@+id/notespng"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/notes"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/notespng"
+                        android:text="Previous Year Question Paper"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#00832F"
+                        android:textSize="16sp"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:background="@drawable/buttonpublicwindow"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="15dp"
+                    >
+                    <ImageView
+                        android:id="@+id/notifipng"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/notificationbell"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/notifipng"
+                        android:text="Notifications"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#00832F"
+                        android:textSize="17sp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/buttonpublicwindow"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+
+                    >
+                    <ImageView
+                        android:id="@+id/bookpn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/videolib"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bookpn"
+                        android:text="E-Content Development Cell"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#00832F"
+                        android:textSize="15sp"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
 
 
 
-    </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
 
 
 </LinearLayout>
