@@ -1,45 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    tools:context=".PublicActivity"
-    android:orientation="vertical"
-    android:weightSum="100"
+    android:layout_width="match_parent"
+
+
     >
     <RelativeLayout
+        android:id="@+id/slidebartop"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="35"
+        android:layout_height="215dp"
+        android:layout_alignParentTop="true"
         >
-        <android.support.v4.view.ViewPager
-            android:id="@+id/viewPage"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
-        <ImageView
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/gradientimage"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/dotslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            >
+
+
+
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/backgroundgradiant"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
 
             />
 
 
 
     </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/maincolor"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@id/slidebartop"
+        >
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:background="@color/maincolor"
-        android:layout_weight="65">
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/gradientbot"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -104,8 +137,12 @@
                         android:gravity="center"
                         android:layout_marginTop="5dp"
                         android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
                         android:textColor="#00832F"
-                        android:textSize="16sp"/>
+
+                        android:paddingRight="3dp"
+                        android:paddingLeft="3dp"
+                        android:textSize="15sp"/>
 
 
                 </RelativeLayout>
@@ -176,12 +213,96 @@
                         android:layout_marginTop="5dp"
                         android:textStyle="bold"
                         android:textColor="#00832F"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp"
+                        android:autoSizeTextType="uniform"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        />
 
 
                 </RelativeLayout>
 
+
+
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:background="@drawable/buttonpublicwindow"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="15dp"
+                    >
+                    <ImageView
+                        android:id="@+id/notifipngss"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/notificationbell"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/notifipngss"
+                        android:text="Notifications"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#00832F"
+                        android:textSize="17sp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/buttonpublicwindow"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+
+                    >
+                    <ImageView
+                        android:id="@+id/bookpnss"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/teamicon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bookpnss"
+                        android:text="Our Team"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#00832F"
+                        android:textSize="17sp"
+                        android:autoSizeTextType="uniform"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
 
 
 
@@ -191,6 +312,7 @@
 
 
     </RelativeLayout>
+    </ScrollView>
 
 
-</LinearLayout>
+</RelativeLayout>

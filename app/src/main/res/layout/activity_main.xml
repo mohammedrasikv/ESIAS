@@ -14,7 +14,7 @@
         android:id="@+id/logintoplayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="30"
+        android:layout_weight="35"
         >
         <RelativeLayout
             android:layout_width="match_parent"
@@ -31,10 +31,11 @@
                 android:layout_height="match_parent"
                 android:alpha=".75"
                 android:background="@color/maincolor" />
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-5dp"
                 android:background="@drawable/backgroundgradiant"
 
 
@@ -44,8 +45,8 @@
         </RelativeLayout>
         <ImageView
             android:id="@+id/logoid"
-            android:layout_width="380dp"
-            android:layout_height="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:background="@drawable/newlogo"
@@ -64,7 +65,7 @@
         android:outlineAmbientShadowColor="@color/maincolor"
         android:outlineSpotShadowColor="@color/maincolor"
         android:layout_marginTop="-10dp"
-        android:layout_weight="70"
+        android:layout_weight="65"
         android:weightSum="10"
         android:orientation="vertical"
 
@@ -75,10 +76,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="20dp"
             android:orientation="vertical"
-            android:layout_weight="7"
             android:weightSum="20"
 
 
@@ -91,18 +91,10 @@
                 android:textColor="#fff"
                 android:textStyle="bold"
                 android:textSize="22sp"
-                android:layout_weight="1"
                 />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/textinputlayoutheight"
-                android:layout_marginTop="20dp"
-                android:textColorHint="@color/editlogin"
-                android:layout_weight="1"
-                android:paddingTop="5dp"
 
-                >
+
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/usernamelogin"
@@ -118,20 +110,14 @@
                         android:drawablePadding="5dp"
                         android:paddingRight="10dp"
                         android:inputType="text"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="30dp"
                         />
 
-            </com.google.android.material.textfield.TextInputLayout>
 
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/textinputlayoutheight"
-                android:textColorHint="@color/editlogin"
-                android:layout_weight="1"
-                android:paddingTop="5dp"
-                >
 
-                    <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/editextheight"
                         android:background="@drawable/edittextborder"
@@ -144,9 +130,11 @@
                         android:drawablePadding="5dp"
                         android:inputType="textPassword"
                         android:paddingRight="10dp"
-                        android:paddingTop="5dp"
+                        android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+
                         />
-            </com.google.android.material.textfield.TextInputLayout>
+
 
 
 
@@ -158,7 +146,7 @@
                 android:textSize="15sp"
                 android:text="Remember me"
                 android:buttonTint="@color/editlogin"
-                android:layout_weight="1"
+
                 />
             <androidx.cardview.widget.CardView
                 android:id="@+id/submitlogin"
@@ -168,7 +156,6 @@
                 app:cardCornerRadius="25dp"
                 android:layout_marginTop="20dp"
                 android:clickable="true"
-                android:layout_weight=".55"
                 >
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -196,7 +183,6 @@
                 android:textSize="16sp"
                 android:layout_gravity="right"
                 android:clickable="true"
-                android:layout_weight="1"
 
                 />
             <LinearLayout
@@ -217,7 +203,7 @@
             android:gravity="center"
             android:textColor="#fff"
             android:alpha=".75"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="2dp"
             android:textSize="12sp"
 
             />
