@@ -15,7 +15,7 @@
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginTop="-5dp"
             />
@@ -46,6 +46,12 @@
 
 
     </RelativeLayout>
+    <FrameLayout
+        android:layout_below="@id/slidebartop"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/gradientbot"
+        />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -58,11 +64,7 @@
         android:layout_height="wrap_content"
         android:background="@color/maincolor"
         >
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:background="@drawable/gradientbot"
-            />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_centerHorizontal="true"
