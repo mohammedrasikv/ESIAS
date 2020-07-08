@@ -1,9 +1,11 @@
 package com.example.esias;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
@@ -36,6 +38,7 @@ public class PublicActivity extends AppCompatActivity {
         dotsLayout=(LinearLayout)findViewById(R.id.dotslayout);
         prepareDots(customPostion++);
         createSlideShow();
+        buttonActionsurl();
 
         viewPager.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -82,7 +85,8 @@ public class PublicActivity extends AppCompatActivity {
                 handler.post(runnable);
             }
         }
-        ,250,2500
+        ,3000,3000
+
         );
 
     }
@@ -103,6 +107,38 @@ public class PublicActivity extends AppCompatActivity {
             layoutParams.setMargins(4,0,4,0);
             dotsLayout.addView(dots[i],layoutParams);
         }
+
+    }
+
+    private void buttonActionsurl()
+    {
+        CardView examresult=(CardView)findViewById(R.id.examresult);
+        CardView collegeofficial=(CardView)findViewById(R.id.collegeofficial);
+        CardView ourteam=(CardView)findViewById(R.id.ourteams);
+
+
+
+
+
+        examresult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PublicActivity.this,WebViewOne.class).putExtra("urltoload","http://results.uoc.ac.in/"));
+            }
+        });
+        collegeofficial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PublicActivity.this,WebViewOne.class).putExtra("urltoload","http://siasindia.org/"));
+            }
+        });
+
+        ourteam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PublicActivity.this,WebViewOne.class).putExtra("urltoload","https://aquibe.github.io/e-sias-developers/"));
+            }
+        });
 
     }
 

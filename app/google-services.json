@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "644812137437",
+    "firebase_url": "https://e-sias.firebaseio.com",
+    "project_id": "e-sias",
+    "storage_bucket": "e-sias.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644812137437:android:aaf2cb37d812a64b430c34",
+        "android_client_info": {
+          "package_name": "com.example.esias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644812137437-d565q4so7puftj33i96gb3oche0hmsq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChKMx_YCds4SyGMltOGOBEvERR9wM1xX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644812137437-d565q4so7puftj33i96gb3oche0hmsq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
