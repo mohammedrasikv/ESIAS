@@ -83,6 +83,8 @@
 
                 >
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/syllabusbtn"
+                    android:clickable="true"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     app:cardCornerRadius="32dp"

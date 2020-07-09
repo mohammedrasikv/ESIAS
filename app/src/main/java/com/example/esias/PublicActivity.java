@@ -115,6 +115,7 @@ public class PublicActivity extends AppCompatActivity {
         CardView examresult=(CardView)findViewById(R.id.examresult);
         CardView collegeofficial=(CardView)findViewById(R.id.collegeofficial);
         CardView ourteam=(CardView)findViewById(R.id.ourteams);
+        CardView syllabusBtn=(CardView)findViewById(R.id.syllabusbtn);
 
 
 
@@ -137,6 +138,12 @@ public class PublicActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(PublicActivity.this,WebViewOne.class).putExtra("urltoload","https://aquibe.github.io/e-sias-developers/"));
+            }
+        });
+        syllabusBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PublicActivity.this,WebViewOne.class).putExtra("urltoload","https://aquibe.github.io/e-sias-syllabus/bca-2.html"));
             }
         });
 

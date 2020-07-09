@@ -14,8 +14,17 @@
         android:id="@+id/logintoplayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="35"
+        android:layout_weight="40"
         >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-5dp"
+            android:background="@color/maincolor"
+
+
+            />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -23,7 +32,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:background="@drawable/headerimage"
+                android:background="@drawable/slideone"
                 />
 
             <LinearLayout
@@ -31,15 +40,7 @@
                 android:layout_height="match_parent"
                 android:alpha=".75"
                 android:background="@color/maincolor" />
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="-5dp"
-                android:background="@drawable/backgroundgradiant"
 
-
-                />
 
 
         </RelativeLayout>
@@ -65,7 +66,7 @@
         android:outlineAmbientShadowColor="@color/maincolor"
         android:outlineSpotShadowColor="@color/maincolor"
         android:layout_marginTop="-10dp"
-        android:layout_weight="65"
+        android:layout_weight="60"
         android:weightSum="10"
         android:orientation="vertical"
 
@@ -131,7 +132,7 @@
                         android:inputType="textPassword"
                         android:paddingRight="10dp"
                         android:layout_gravity="bottom"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
 
                         />
 
@@ -151,10 +152,10 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/submitlogin"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="40dp"
                 app:cardBackgroundColor="#006f02"
                 app:cardCornerRadius="25dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:clickable="true"
                 >
                 <RelativeLayout
@@ -177,7 +178,7 @@
                android:id="@+id/publiclogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:text="Sign in as Public >"
                 android:textColor="@color/editlogin"
                 android:textSize="16sp"
